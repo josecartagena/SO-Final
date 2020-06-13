@@ -1,11 +1,11 @@
-Push de contenedor a repositorio privado
+#Push de contenedor a repositorio privado
 
 docker images
 docker commit -m "Example" a426516eef96 jpoou/my-repo:lastest
 docker login
 docker push jpoou/my-repo:lastest
 
-Implementacion del repositorio privado en k8s
+#Implementacion del repositorio privado en k8s
 
 DOCKER_REGISTRY_SERVER=docker.io
 DOCKER_USER=user_name
