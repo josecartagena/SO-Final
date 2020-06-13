@@ -22,14 +22,17 @@ Documentación implementación de repositorio privado en k8s
 apiVersion: v1
 kind: Pod
 metadata:
-  name: so-final
+  name: operativos-final
 spec:
   containers:
-  - name: so-final
+  - name: operativos-final
     image: josecarta/k8s:4
 	imagePullPolicy: Always
 ```
 - kubectl create -f local.yaml 
-- kubectl get pods
+- kubectl get pods (Para ver el estado de todos los pods del namespaces default)
 - kubectl describe pod operativos-final
 - kubectl get pods
+```
+Debera mostrar el pod operativos-final en ready 1/1
+```
